@@ -34,6 +34,13 @@ function warn(file, msg) {
   warnings.push(`⚠️  [${relative(REPO_ROOT, file)}] ${msg}`);
 }
 
+/** 路径含 `_` 开头的目录段 → 视为测试 fixture / 草稿，不计入正式 catalog。 */
+function isFixture(absFile) {
+  return relative(SKILLS_DIR, absFile)
+    .split(/[\\/]/)
+    .some((seg) => seg.startsWith("_"));
+}
+
 /** body 是否含 `## 立场` 段（兼容半角/全角空格、可带英文别名）。 */
 function hasStanceSection(body) {
   return /^#{1,6}\s*立场(\s*\(?\s*Stance\s*\)?)?\s*$/im.test(body);
@@ -104,10 +111,14 @@ async function build() {
   // 扫描原子 skill（排除 packages/ 下的，那些走 PACKAGE.md）
   const skillFiles = (
     await glob("**/SKILL.md", { cwd: SKILLS_DIR, absolute: true })
-  ).sort();
+  )
+    .filter((f) => !isFixture(f))
+    .sort();
   const pkgFiles = (
     await glob("packages/*/PACKAGE.md", { cwd: SKILLS_DIR, absolute: true })
-  ).sort();
+  )
+    .filter((f) => !isFixture(f))
+    .sort();
 
   const skills = skillFiles.map(parseSkill);
   const packages = pkgFiles.map(parsePackage);

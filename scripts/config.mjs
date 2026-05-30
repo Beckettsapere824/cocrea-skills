@@ -1,13 +1,12 @@
 // ─────────────────────────────────────────────────────────────────────────────
-// CoCrea 全局常量 —— 占位组织/仓库名集中于此一处。
+// CoCrea 全局常量 —— GitHub 组织/仓库名集中于此一处。
 //
-// ⚠️ Rick 未定最终 GitHub org。当前用占位 `cocrea/skills`。
-// 后续确定后，只改这里 + .claude-plugin/marketplace.json + README，
-// 不要把占位名散落到脚本各处。
+// 如需迁移仓库，只改这里 + .claude-plugin/marketplace.json + README，
+// 不要把仓库名散落到脚本各处。
 // ─────────────────────────────────────────────────────────────────────────────
 
-/** 占位 GitHub org/repo（owner/repo 形式），用于插件市场订阅命令与 raw URL。 */
-export const REPO_SLUG = "cocrea/skills";
+/** GitHub org/repo（owner/repo 形式），用于插件市场订阅命令与 raw URL。 */
+export const REPO_SLUG = "Beckettsapere824/cocrea-skills";
 
 /** 插件市场 name（kebab-case，对应 .claude-plugin/marketplace.json 的 name 字段）。 */
 export const MARKETPLACE_NAME = "cocrea-skills";

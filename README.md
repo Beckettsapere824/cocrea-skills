@@ -44,10 +44,8 @@ CoCrea 不造编排引擎，造**内容**。这里的每一个 skill 都是一�
 本仓库即一个 [Claude 插件市场](https://code.claude.com/docs/en/plugin-marketplaces)。在你的 agent 里：
 
 ```
-/plugin marketplace add cocrea/skills
+/plugin marketplace add Beckettsapere824/cocrea-skills
 ```
-
-> `cocrea/skills` 为占位仓库名，最终 GitHub org 确定后更新。
 
 订阅后，对你的 agent 说「帮我看看我这个想法」，它会自动调用匹配的 skill。
 
@@ -68,7 +66,7 @@ CoCrea 不造编排引擎，造**内容**。这里的每一个 skill 都是一�
 - **`guardrail` 层不得变成「鼓励多做」**——那背叛了这一层的存在意义。
 - **中文优先**——稀释中文 = 稀释护城河。
 
-完整规范见 [`SKILL_PACKAGE_STANDARD`](https://github.com/cocrea/skills)（模具 #1）。
+完整规范见 [`SKILL_PACKAGE_STANDARD`](https://github.com/Beckettsapere824/cocrea-skills)（模具 #1）。
 
 ---
 
