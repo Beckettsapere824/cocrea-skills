@@ -1,0 +1,15 @@
+{
+  "name": "cocrea-skills-tooling",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "CoCrea Skills 库的本地工具链：CATALOG.json 生成脚本。仓库本身是 SKILL.md 库，不是 npm 包。",
+  "scripts": {
+    "catalog": "node scripts/generate-catalog.mjs",
+    "catalog:check": "node scripts/generate-catalog.mjs --check"
+  },
+  "dependencies": {
+    "glob": "^11.0.0",
+    "gray-matter": "^4.0.3"
+  }
+}

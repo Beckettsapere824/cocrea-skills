@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "cocrea-skills",
+  "owner": {
+    "name": "CoCrea"
+  },
+  "description": "中文创意 Skills 库——用「方法 / 工具 / 护栏」三层增进每个人的创造力。",
+  "plugins": [
+    {
+      "name": "cocrea-skills",
+      "source": ".",
+      "description": "CoCrea 创意三层飞轮 Skills：方法(lens)看懂概念、工具(craft)做出东西、护栏(guardrail)拦你别错；附 skill-creator / skill-finder 杠杆。",
+      "skills": [
+        "./skills/lens",
+        "./skills/craft",
+        "./skills/guardrail",
+        "./skills/meta"
+      ]
+    }
+  ]
+}

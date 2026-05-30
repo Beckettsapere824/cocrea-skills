@@ -1,0 +1,41 @@
+{
+  "generated_at": "2026-05-30T10:22:43.936Z",
+  "skill_count": 2,
+  "package_count": 0,
+  "skills": [
+    {
+      "name": "example-bad-no-stance",
+      "title": "反面样例（缺立场 + 缺迁移）",
+      "layer": "lens",
+      "discipline": "economics",
+      "level": "beginner",
+      "transfer": [],
+      "description": "（回归测试样例）一个故意写得不合规的 lens skill，用来验证 generate-catalog.mjs 的质量告警是否生效。",
+      "tags": [
+        "测试",
+        "反面样例"
+      ],
+      "path": "skills/lens/_bad-example"
+    },
+    {
+      "name": "example-first-principles",
+      "title": "第一性原理（样例）",
+      "layer": "lens",
+      "discipline": "physics",
+      "level": "intermediate",
+      "transfer": [
+        "创业",
+        "产品决策",
+        "个人选择"
+      ],
+      "description": "用第一性原理拆解一个想法或问题，回到不可再分的基本事实重新推理，而非照搬'别人都这么做'的类比方案。当用户陷入'行业惯例如此''大家都这么干'，或想验证一个被默认的前提是否真的成立时使用，即使没明说'第一性原理'也应触发。",
+      "tags": [
+        "思维模型",
+        "推理",
+        "跨学科"
+      ],
+      "path": "skills/lens/_example"
+    }
+  ],
+  "packages": []
+}
