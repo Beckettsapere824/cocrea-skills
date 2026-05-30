@@ -26,16 +26,33 @@ CoCrea 不造编排引擎，造**内容**。这里的每一个 skill 都是一�
    "教你看"               "教你做"                "拦你别错"
 ```
 
-| 层 | 目录 | 一句话 | 例子 |
+| 层 | 目录 | 一句话 | 已上线示例 |
 | :--- | :--- | :--- | :--- |
-| ① **方法 `lens`** | `skills/lens/` | 教你**看懂**被普遍误解的底层概念，强调可迁移 | 第一性原理、系统思维、博弈论、优化模型 |
-| ② **工具 `craft`** | `skills/craft/` | 教你**做出**东西，可调用的做法/工具 | 如何冷启动、如何建 web、SWOT、贝叶斯 |
-| ③ **护栏 `guardrail`** | `skills/guardrail/` | **拦**你别犯错，认知矫正/劝退 | 反过度工程、反伪需求、认知偏差矫正 |
+| ① **方法 `lens`** | `skills/lens/` | 教你**看懂**被普遍误解的底层概念，强调可迁移 | 第一性原理、JTBD、注意力经济、机会成本、复利、贝叶斯思维 |
+| ② **工具 `craft`** | `skills/craft/` | 教你**做出**东西，可调用的做法/工具 | MVP 裁剪、冷启动、钩子设计、简历改写、费曼技巧、主动回忆、决策矩阵 |
+| ③ **护栏 `guardrail`** | `skills/guardrail/` | **拦**你别犯错，认知矫正/劝退 | 反过度工程、反追热点、反沉没成本、反虚荣指标、反低效勤奋 |
 
 > **判断尺：方法教你「看」，工具教你「做」，护栏拦你「别错」。**
 
 `skills/packages/` 放跨三层的 **Skill 包**（一套创意体系，自带推荐顺序）；
 `skills/meta/` 放降低门槛的杠杆 skill（`skill-creator` / `skill-finder`）。
+
+---
+
+## 当前库存（5 个种子包 / 25 skill / 跨三层）
+
+> 机器可读索引见 [`CATALOG.json`](CATALOG.json)（由脚本自动生成，`skill-finder` 的数据源）。
+
+| 包 | 解决什么 | 含 skill |
+| :--- | :--- | :--- |
+| **founder-anti-patterns** | 创业/做产品避坑 | first-principles · jtbd / mvp-scoping / anti-over-engineering |
+| **content-cold-start** | 内容创作冷启动 | attention-economy · jtbd / hook-design · cold-start-first-1000 / anti-trend-chasing · anti-vanity-metrics |
+| **career-positioning** | 求职/转行定位 | opportunity-cost · jtbd / positioning-statement · resume-rewrite / anti-mass-application · anti-credential-anxiety |
+| **learn-how-to-learn** | 学习/备考方法 | compounding / feynman-technique · active-recall / anti-collection-hoarding · anti-fake-diligence |
+| **life-decisions** | 个人重大决策 | bayesian-thinking · opportunity-cost / decision-matrix / anti-sunk-cost · anti-analysis-paralysis |
+
+> 原子化复用：`jtbd` 被 3 个包复用、`opportunity-cost` 被 2 个包复用——一个好 lens 跨多包复用，不重造。
+> 库里还有两个杠杆 skill：`cocrea-skill-creator`（造）+ `cocrea-skill-finder`（找）。
 
 ---
 
@@ -55,8 +72,9 @@ CoCrea 不造编排引擎，造**内容**。这里的每一个 skill 都是一�
 
 我们要的不是「又一个平庸的 skill」。CoCrea 的护城河是**判断力 + 跨学科迁移**，不是数量。
 
-最简单的方式：在你的 agent 里加载 `skills/meta/` 下的 **`cocrea-skill-creator`**，
-对话式把你的方法/工具/避坑经验生成为合规 SKILL.md，再提 PR。
+最简单的方式：在你的 agent 里加载 [`skills/meta/cocrea-skill-creator`](skills/meta/cocrea-skill-creator/SKILL.md)，
+对话式把你的方法/工具/避坑经验生成为合规 SKILL.md，再提 PR——它内置了下面的全部质量红线。
+找不到需要的 skill？先用 [`cocrea-skill-finder`](skills/meta/cocrea-skill-finder/SKILL.md) 检索；没有，就用 creator 造一个。
 
 ### 质量红线（不可退让）
 
@@ -66,7 +84,7 @@ CoCrea 不造编排引擎，造**内容**。这里的每一个 skill 都是一�
 - **`guardrail` 层不得变成「鼓励多做」**——那背叛了这一层的存在意义。
 - **中文优先**——稀释中文 = 稀释护城河。
 
-完整规范见 [`SKILL_PACKAGE_STANDARD`](https://github.com/Beckettsapere824/cocrea-skills)（模具 #1）。
+完整规范内置在 [`cocrea-skill-creator`](skills/meta/cocrea-skill-creator/SKILL.md) 里（加载它，它会逐步带你写合规的 skill）。
 
 ---
 
@@ -93,7 +111,7 @@ cocrea-skills/
 │   └── plugin.json         # 插件元数据
 ├── CATALOG.json            # 自动生成的机器可读索引（勿手改）
 ├── scripts/
-│   ├── config.mjs          # 占位 org/repo 常量集中处
+│   ├── config.mjs          # org/repo 常量集中处
 │   └── generate-catalog.mjs
 ├── .github/workflows/catalog.yml
 └── skills/                 # = 插件市场根
