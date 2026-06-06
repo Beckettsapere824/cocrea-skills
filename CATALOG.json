@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-30T15:17:30.447Z",
-  "skill_count": 25,
-  "package_count": 5,
+  "generated_at": "2026-06-06T12:48:45.901Z",
+  "skill_count": 34,
+  "package_count": 6,
   "skills": [
     {
       "name": "active-recall",
@@ -344,6 +344,48 @@
       "path": "skills/lens/compounding"
     },
     {
+      "name": "fe-harmony",
+      "title": "外倾情感(Fe)镜头:看清这件事对人意味着什么",
+      "layer": "lens",
+      "discipline": "psychology",
+      "level": "intermediate",
+      "transfer": [
+        "团队协作",
+        "用户共情",
+        "谈判沟通",
+        "关系维护"
+      ],
+      "description": "用外倾情感(Fe)这把认知镜头,看清一个决定会怎样影响身边人的感受、关系和氛围——那些只盯着事、不看人的判断里被忽略的东西。当用户说「我只考虑了效率/利益,没想过别人怎么想」「为什么团队/合作方反应这么冷」「这事对大家意味着什么」,或在一个明显牵动他人感受的决定里只算了利弊账时使用——即使没提『Fe』也应触发。注意:这是看问题的镜头,不是人格诊断。",
+      "tags": [
+        "认知功能",
+        "外倾情感",
+        "共情",
+        "跨学科"
+      ],
+      "path": "skills/lens/fe-harmony"
+    },
+    {
+      "name": "fi-authenticity",
+      "title": "内倾情感(Fi)镜头:这到底是不是你真正想要的",
+      "layer": "lens",
+      "discipline": "psychology",
+      "level": "advanced",
+      "transfer": [
+        "人生决策",
+        "职业选择",
+        "创业初心",
+        "自我认知"
+      ],
+      "description": "用内倾情感(Fi)这把认知镜头,逼问一个决定到底符不符合你真正在乎的价值:这是我想要的,还是我以为我该想要的?当用户说「我达成了目标却不开心」「按理说该高兴但总觉得不对」「我好像在过别人期待的人生」「这真的是我想要的吗」,或在一个高效达成、却隐隐空虚的处境里时使用——即使没提『Fi』也应触发。注意:这是看问题的镜头,不是人格诊断。",
+      "tags": [
+        "认知功能",
+        "内倾情感",
+        "价值对齐",
+        "跨学科"
+      ],
+      "path": "skills/lens/fi-authenticity"
+    },
+    {
       "name": "first-principles",
       "title": "第一性原理",
       "layer": "lens",
@@ -385,6 +427,48 @@
       "path": "skills/lens/jtbd"
     },
     {
+      "name": "ne-possibility",
+      "title": "外倾直觉(Ne)镜头:把一条路炸成一片可能性",
+      "layer": "lens",
+      "discipline": "psychology",
+      "level": "intermediate",
+      "transfer": [
+        "头脑风暴",
+        "创意发想",
+        "破局思路",
+        "内容选题"
+      ],
+      "description": "用外倾直觉(Ne)这把认知镜头,把『我只想到一种做法』炸开成一扇扇可能性的门:如果换个方式呢?这能不能和别的东西组合?当用户说「我卡住了只有这一条路」「想不出别的办法」「帮我想想还能怎么做」,或在过早收敛到单一方案、还没探索就开干时使用——即使没提『Ne』『发散』也应触发。注意:这是看问题的镜头,不是人格诊断。",
+      "tags": [
+        "认知功能",
+        "外倾直觉",
+        "发散",
+        "跨学科"
+      ],
+      "path": "skills/lens/ne-possibility"
+    },
+    {
+      "name": "ni-convergence",
+      "title": "内倾直觉(Ni)镜头:剥掉噪音,看出那根主线",
+      "layer": "lens",
+      "discipline": "psychology",
+      "level": "advanced",
+      "transfer": [
+        "战略判断",
+        "长期规划",
+        "个人定位",
+        "趋势预判"
+      ],
+      "description": "用内倾直觉(Ni)这把认知镜头,在一堆纷乱的事里剥掉噪音,看出『这一切到底指向哪个方向』的那一根主线。当用户说「我在做很多事但不知道为了什么」「看不清大方向」「这些事之间到底什么关系」,或被太多选项和信息淹没、抓不住本质时使用——即使没提『Ni』『收敛』也应触发。注意:这是看问题的镜头,不是人格诊断。",
+      "tags": [
+        "认知功能",
+        "内倾直觉",
+        "收敛",
+        "跨学科"
+      ],
+      "path": "skills/lens/ni-convergence"
+    },
+    {
       "name": "opportunity-cost",
       "title": "机会成本:你放弃的,才是真代价",
       "layer": "lens",
@@ -405,6 +489,90 @@
         "经济学思维"
       ],
       "path": "skills/lens/opportunity-cost"
+    },
+    {
+      "name": "se-action",
+      "title": "外倾感觉(Se)镜头:拉回当下,马上动手",
+      "layer": "lens",
+      "discipline": "psychology",
+      "level": "beginner",
+      "transfer": [
+        "快速执行",
+        "临场应变",
+        "克服拖延",
+        "抓住机会"
+      ],
+      "description": "用外倾感觉(Se)这把认知镜头,把困在脑子里的纠结拉回到当下能立刻动手的具体现实:此刻你眼前真实存在的是什么?现在马上能做的一步是什么?当用户说「我想太多迟不开始」「全是计划没有行动」「不知道现在该干嘛」,或在反复分析、脱离实际、迟迟不落地时使用——即使没提『Se』也应触发。注意:这是看问题的镜头,不是人格诊断。",
+      "tags": [
+        "认知功能",
+        "外倾感觉",
+        "行动",
+        "跨学科"
+      ],
+      "path": "skills/lens/se-action"
+    },
+    {
+      "name": "si-precedent",
+      "title": "内倾感觉(Si)镜头:翻出过去的经验作参照",
+      "layer": "lens",
+      "discipline": "psychology",
+      "level": "beginner",
+      "transfer": [
+        "复盘总结",
+        "风险预判",
+        "习惯养成",
+        "经验复用"
+      ],
+      "description": "用内倾感觉(Si)这把认知镜头,调出过去的真实经验作为参照:类似的事以前发生过吗?那次怎么样?有什么细节和教训被你这次忽略了?当用户说「这次我有种似曾相识的感觉」「我是不是又在重蹈覆辙」「以前是怎么做的」,或在抛开过往经验、凭一时冲动重启一件曾经栽过跟头的事时使用——即使没提『Si』也应触发。注意:这是看问题的镜头,不是人格诊断。",
+      "tags": [
+        "认知功能",
+        "内倾感觉",
+        "经验参照",
+        "跨学科"
+      ],
+      "path": "skills/lens/si-precedent"
+    },
+    {
+      "name": "te-structuring",
+      "title": "外倾思维(Te)镜头:把混乱拆成可执行的结构",
+      "layer": "lens",
+      "discipline": "psychology",
+      "level": "intermediate",
+      "transfer": [
+        "创业运营",
+        "个人效率",
+        "项目管理",
+        "团队协作"
+      ],
+      "description": "用外倾思维(Te)这把认知镜头,把一团混乱拆成可执行的结构、指标和决断。当用户说「太乱了不知从哪下手」「这事怎么推进」「怎么定优先级」,或面对一摊没有头绪的事时使用——即使没提『Te』『外倾思维』也应触发。注意:这是看问题的镜头,不是人格诊断。",
+      "tags": [
+        "认知功能",
+        "外倾思维",
+        "结构化",
+        "跨学科"
+      ],
+      "path": "skills/lens/te-structuring"
+    },
+    {
+      "name": "ti-coherence",
+      "title": "内倾思维(Ti)镜头:逼问逻辑到底站不站得住",
+      "layer": "lens",
+      "discipline": "psychology",
+      "level": "intermediate",
+      "transfer": [
+        "概念澄清",
+        "写作论证",
+        "产品定义",
+        "学习理解"
+      ],
+      "description": "用内倾思维(Ti)这把认知镜头,逼问一个想法在逻辑上到底站不站得住:定义清楚了吗?前提自洽吗?哪里有偷换概念?当用户说「这个说法对不对」「我觉得哪里怪怪的但说不出来」「帮我想清楚这个逻辑」,或在用一堆模糊大词(如『赋能』『生态』『帮助大学生』)却没界定清楚时使用——即使没提『Ti』也应触发。注意:这是看问题的镜头,不是人格诊断。",
+      "tags": [
+        "认知功能",
+        "内倾思维",
+        "逻辑自洽",
+        "跨学科"
+      ],
+      "path": "skills/lens/ti-coherence"
     },
     {
       "name": "cocrea-skill-creator",
@@ -436,6 +604,22 @@
         "杠杆"
       ],
       "path": "skills/meta/cocrea-skill-finder"
+    },
+    {
+      "name": "cognitive-diagnosis",
+      "title": "八维认知诊断入口",
+      "layer": "meta",
+      "discipline": "psychology",
+      "level": "advanced",
+      "transfer": [],
+      "description": "当用户长篇陈述一个纠结、反复绕圈、明显陷在某一种思维模式里却不自知时（典型如：一直空谈计划从不行动、只算利弊不顾人的感受、困在一条路钻牛角尖、想法太多无法收敛、达成目标却莫名空虚），先诊断他过度依赖了哪一维认知功能、缺哪一维，再只递给他缺的那 1-2 把镜头，帮他跳出循环。这是被动诊断入口——用户没点名任何功能、但话里透出明显认知卡点时主动用上它。注意：这是认知视角诊断，不是人格测试。",
+      "tags": [
+        "认知诊断",
+        "思维卡点",
+        "跳出循环",
+        "八维入口"
+      ],
+      "path": "skills/meta/cognitive-diagnosis"
     }
   ],
   "packages": [
@@ -456,6 +640,26 @@
         "resume-rewrite"
       ],
       "path": "skills/packages/career-positioning"
+    },
+    {
+      "package": "cognitive-functions-360",
+      "title": "八维认知审视",
+      "layers": [
+        "lens",
+        "meta"
+      ],
+      "skills": [
+        "cognitive-diagnosis",
+        "te-structuring",
+        "ti-coherence",
+        "ni-convergence",
+        "ne-possibility",
+        "fe-harmony",
+        "fi-authenticity",
+        "se-action",
+        "si-precedent"
+      ],
+      "path": "skills/packages/cognitive-functions-360"
     },
     {
       "package": "content-cold-start",
