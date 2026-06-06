@@ -2,10 +2,14 @@
 
 > 用「方法 / 工具 / 护栏」三层，扬长避短地增进每个人的创造力——一个有立场的中文创意 Skills 库。
 
-CoCrea 不造编排引擎，造**内容**。这里的每一个 skill 都是一份 [Anthropic SKILL.md](https://code.claude.com/docs/en/skills)——
-中文优先、带学科判断力、敢说「不」。你自带的 AI agent 直接加载它们，orchestration 由大模型自己免费完成。
+**CoCrea 不是「又一个 skill 库」，是一个可生长的判断力体系。**
+市面上的 skill 库绝大多数是英文、工程向、人工堆砌的静态集合。CoCrea 的差异化支点是四个修饰词的交集——
+**中文 × 创意非工程师 × 跨学科方法论 × 人类社区共建**——这个交集，目前没有对手在做。
 
-零后端、零算力、零安装门槛。一行命令，让你的 AI 瞬间获得「看问题的方法 + 做事的工具 + 拦错的护栏」。
+CoCrea 不造编排引擎，造**内容**。这里的每一个 skill 都是一份 [Anthropic SKILL.md](https://code.claude.com/docs/en/skills)——
+中文优先、带学科判断力、敢说「不」。兼容 Claude Code 的 agent 直接加载它们，orchestration 由大模型自己免费完成。
+
+零后端、零算力。在支持 Anthropic Agent Skills 标准的环境里一行订阅，让你的 AI 获得「看问题的方法 + 做事的工具 + 拦错的护栏」。
 
 ---
 
